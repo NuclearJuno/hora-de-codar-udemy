@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h2>
+        Formulários HTML
+    </h2>
+    <!-- 1 primeiro formulario -->
+    <!-- 2 atributos -->
+    <form action="register.php" method="get">
+        <div>
+            <label>Nome:</label>
+            <input type="text">
+        </div>
+    <!-- 3 atributo name/age novo input -->
+        <div>
+            <label> Idade:</label>
+            <!-- atributo label -->
+            <input type="text" name="age">
+        </div>
+        <!-- 6 select -->
+        <div>
+            <label for="job">Selecione sua Profissao</label>
+            <select name="job">
+                <option value="programador">Programador</option>
+                <option value="tester">Tester</option>
+                <option value="dev-ops">DevOps</option>
+            </select>
+        </div>
+        <!-- 7 atributo selected -->
+        <label for="contract">Voçe leu os termos?</label>
+        <select name="contract">
+            <option value="sim">Eu li</option>
+            <option value="não" selected>Não li</option>
+            <!-- o selected é pra começar assim na opção -->
+        </select>
+        <!-- 8 multiplas opções do select no option -->
+        <div>
+            <label for="itens">Quais itens deseja em suas compras?</label>
+            <select name="itens" multiple>
+                <option value="pera">Pera</option>
+                <option value="feijao">Feijão</option>
+                <option value="milho">Milho</option>
+                <option value="arroz">Arroz</option>
+            </select>
+        </div>
+        <!-- 9 text area -->
+        <!-- cols e rows largura e altura ca caixa de texto -->
+        <div>
+            <label for="comment">Comente!</label>
+            <textarea name="comment" id="" cols="15" rows="5">Digite aqui!</textarea>
+        </div>
+<!-- 10 fieldset e legend -->
+<div>
+    <fieldset>
+        <legend>Faça um resumo sobre Você</legend>
+        <label for="first-name">Primeiro Nome:</label>
+        <input type="text" nome="first-name">
+        <label for="second-name">Sobrenome:</label>
+        <input type="text" name="second-name">
+    </fieldset>
+</div>
+<!-- 11 datalist é como um select é aquele que vc acha e pode escolher-->
+    <div>
+        <label for="flavor">Escolha o sabor:</label>
+        <input type="text" list="flavors" name="flavor">
+        <datalist id="flavors">
+            <option value="cereja"></option>
+            <option value="morango"></option>
+            <option value="manga"></option>
+            <option value="melancia"></option>
+        </datalist>
+    </div>
+    <!-- 12 senha -->
+    <div>
+        <label for="password">sua senha</label>
+        <input type="password" name="password">
+    </div>
+    <!-- 14 radio butom -->
+    <div>
+        <label for="car_model">Escolha um modelo de carro:</label>
+        <div class="radio">
+            <input type="radio" value="bmw" name="car_model">
+            <label for="bmw">Bmw</label>
+        
+        <div class="radio">
+            <input type="radio" value="chevete" name="car_model">
+            <label for="chevete">chevete</label>
+        
+        <div class="radio">
+            <input type="radio" value="ferrari" name="car_model">
+            <label for="ferrari">ferrari</label>
+        
+        <div class="radio">
+            <input type="radio" value="renaut" name="car_model">
+            <label for="renaut">renaut</label>
+        </div>
+    </div>
+        <!--15 input checkbox -->
+<div>
+    <label for="optionals">Carros opcionais</label>
+    <div class="radio">
+        <input type="checkbox" name="optionals[]" value="bigtires">
+        <label for="bigtires">Pneus grandes</label>
+    </div>
+    <div class="radio">
+        <input type="checkbox" name="optionals[]" value="turbo">
+        <label for="turbo">Turbo</label>
+    </div>
+    <div class="radio">
+        <input type="checkbox" name="optionals[]" value="hibrido">
+        <label for="hibrido">Hibrido</label>
+    </div>
+</div>
+<!-- 16 datas -->
+<div>
+    <label for="birthday">Data de Nascimento</label>
+    <input type="date" name="birthday">
+</div>
+<!-- 17 input para arquivos -->
+<div>
+    <label for="image">Insira o arquivo</label>
+    <input type="file" name="image">
+</div>
+<!-- 18 numeros  -->
+<div>
+    <label for="salary">Quanto vc ganha atualmente:</label>
+    <input type="number" name="salary">
+</div>
+<!-- 19 email -->
+<div>
+    <label for="email">email</label>
+    <input type="email" name="email">
+</div>
+<!-- 20 atributo value -->
+<div>
+    <label for="value">Digite um valor</label>
+    <input type="text" value="esse é seu valor" name="value">
+</div>
+<!-- 21 atributo disable -->
+<div>
+    <p>tente mudar o valor :</p>
+    <input type="text" value="nao precisa preencher" disabled>
+</div>
+<!-- 22  atributo placeholder  referencia-->
+<div>
+    <label for="currentjob">Qual sua Profissao</label>
+    <input type="text" name="correntjob" placeholder="você esta trabalhando? " >
+</div>
+<!-- 23 atributo required campos obrigatorios-->
+<div>
+    <label for="birthyaer">ano de nascimento</label>
+    <input type="text" name="birthyaer" placeholder="digite o ano" required>
+</div>
+<!-- 13 resetar form limpar tudo -->
+<input type="reset" value="limpar">
+<!-- 5 envio de form, o html tenta fazer esse trabalo de envio pois ele tem essa integração backend -->
+<input type="submit" value= "Enviar">
+    </form>
+</body>
+</html>

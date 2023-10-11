@@ -1,0 +1,135 @@
+/* display */
+.inline-box{
+width: 50px;
+height: 50px;
+background-color: #4f8;
+margin: 10px;
+display: inline-block;
+}
+.block{
+    background-color: #333;
+    display: block;
+    margin: 10px;
+}
+.invisible{
+    display: none;
+}
+/* posição statica nao muda nada */
+.static{
+    position: static;
+    background-color: #391;
+    color: white;
+    width: 100px;
+    height: 100px;
+}
+/* posição relativa  */
+/* esse tipo de 
+posicionamento de
+elementos pode infringir o
+utros elementos do html na pag */
+.relative{
+    position: relative;
+    top: 100px;
+    left: 100px;
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    color: black;
+}
+/* posição absoluta  */
+.absolute{
+    position: absolute;
+    top: 3px;
+    left: 300px;
+    background-color: rgb(0, 0, 0);
+    width: 100px;
+    height: 100px;
+    color: rgb(255, 0, 0);
+}
+/* posição relative e absolute*/
+.relative-container{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: absolute;
+}
+
+/* note que o posicionamento das div dentro da div container 
+só são possiveis a configuração, mediante o ''posicion absolute''
+no container, de certo modo limitando a area  */
+.absolute1, .absolute2{
+width: 50px;
+height: 50px;
+background-color: #443 ;
+position: absolute
+}
+
+.absolute1{
+    top: 10px;
+    left: 10px;
+}
+.absolute2{
+    bottom: 10px;
+    right: 10px;
+}
+/* elementos em posição fixed
+ geralmente usado em menus*/
+.fixed{
+    width: 100px;
+    height: 100px;
+    top: 10px;
+    right: 5px;
+    background-color: rgb(159, 159, 228);
+    border: 1px solid blueviolet;
+    position: fixed
+}
+
+/* esse elementos em sticky 
+ele vai sair da posição dele se vc 
+rolar a pagina e depois se vc 
+voltar ele volta pro lugar dele  */
+
+.sticky{
+    top: 10px;
+    right: 5px;
+    background-color: rgb(228, 159, 176);
+    border: 1px solid rgb(43, 226, 226);
+    position: sticky
+}
+/* z-index */
+
+.relative-container2{
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: absolute;
+    top: 700px;
+}
+
+.absolute3,.absolute4,.absolute5{
+    width: 50px;
+    height: 50px;
+    background-color: #423;
+    position: absolute;
+
+}
+.absolute3{
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+}
+.absolute4{
+    top: 20px;
+    left: 20px;
+    background-color: azure;
+    z-index: 2;
+}
+.absolute5{
+    top: 40px;
+    left: 40px;
+    background-color: #4f8;
+    z-index: 1;
+}
