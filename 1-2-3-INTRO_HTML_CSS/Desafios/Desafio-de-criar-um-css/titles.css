@@ -1,0 +1,21 @@
+h1{
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+h2{
+    color: aquamarine;
+}
+h3{
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 100px;
+    color: gold;
+}
+h4{
+    text-align: end;
+color: bisque;
+background-color: black;
+border: 2px solid green;
+border-radius: 5px;
+}
+/* aqui é um comentario  */

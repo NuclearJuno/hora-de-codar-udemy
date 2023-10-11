@@ -1,0 +1,16 @@
+#box-model{
+    padding: 10px 15px;
+    margin: 50px;
+    height: 100%;
+    width: 70%;
+    border-bottom: 3px solid rgb(98, 18, 151);
+    outline: 40px solid rgba(44, 221, 44, 0.226);
+    border-radius: 30px;
+    border-left: 1px solid rgba(133, 192, 23, 0.527) ;
+}
+.texth1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.texth2{
+    background-color: rgba(35, 16, 141, 0.212);
+}
